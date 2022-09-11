@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#container {
+    display: flex;
+    width: 960px;
+    height: 960px;
+    max-width: 960px;
+    max-height: 960px;
+    background-color: blue;
+    flex-wrap: wrap;
+    
+}
+
+.new {
+    background-color: aqua;
+    flex-grow: 1;
+    margin: 0;
+    
+}
+
