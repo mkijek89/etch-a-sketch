@@ -38,6 +38,15 @@ window.onload = function(){
 counter.addEventListener('click', function(){
     clearGrid(container);
     let gridNumber = prompt('Enter the number of squares in grid');
-    appendGrid(container,gridNumber);
+    if (gridNumber <= 100){
+         appendGrid(container,gridNumber);
+    }
+    else {
+        do {
+            gridNumber = prompt('The number must not be greater than 100');
+        }
+        while(gridNumber > 100);
+            appendGrid(container,gridNumber);
+    }
 })
 
